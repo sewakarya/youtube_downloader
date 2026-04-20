@@ -13,7 +13,8 @@ From this repo root:
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -U pip
-python3 -m pip install -e .
+pip install -r requirements.txt
+pip install -e .
 ```
 
 Also install **ffmpeg** (required for merging video+audio and converting to MP4):
