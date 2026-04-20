@@ -7,7 +7,14 @@ Local YouTube downloader with:
 
 ## Install
 
-From this repo root:
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/sewakarya/youtube_downloader.git
+cd youtube_downloader
+```
+
+### 2. Install Python dependencies
 
 ```bash
 python3 -m venv .venv
@@ -17,14 +24,19 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-Also install **ffmpeg** (required for merging video+audio and converting to MP4):
+### 3. Install ffmpeg (required for MP4 output)
+
+ffmpeg is a system tool — it can't be installed via pip. Install it for your OS:
 
 ```bash
 # macOS
 brew install ffmpeg
 
-# Ubuntu/Debian
+# Ubuntu / Debian
 sudo apt install ffmpeg
+
+# Windows
+winget install ffmpeg
 ```
 
 ## Run
