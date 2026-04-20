@@ -1,0 +1,20 @@
+[project]
+name = "youtube-downloader"
+version = "0.1.0"
+description = "Interactive CLI to download a YouTube video into Vid/."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "yt-dlp>=2025.1.1",
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+]
+
+[project.scripts]
+youtube-downloader = "youtube_downloader.cli:main"
+youtube-downloader-web = "youtube_downloader.web:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
